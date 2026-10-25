@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Марина Никитина | Digital Artist & 3D Modeler</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cloudflare.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
@@ -57,7 +57,7 @@
                 <h2>Портфолио</h2>
                 <div class="filter-buttons">
                     <button class="filter-btn active" data-filter="all">Все работы</button>
-                    <button class="filter-btn" data-filter="vector">2D Vector</button>
+                    <button class="filter-btn" data-filter="vector">2D Вектор</button>
                     <button class="filter-btn" data-filter="raster">2D Digital Painting</button>
                     <button class="filter-btn" data-filter="3d">3D Art</button>
                     <button class="filter-btn" data-filter="gamedesign">Геймдизайн</button>
@@ -65,23 +65,27 @@
             </div>
 
             <div class="portfolio-grid">
-                <!-- Кейс 1 -->
-                
+                <!-- Кейс 1 (Вектор) -->
+                <div class="portfolio-item" data-category="vector"
+                     data-title="Айдентика кофейни"
+                     data-desc="Логотип, набор паттернов и мерч для сети специализированной кофейни. Полная визуальная система бренда."
+                     data-images="img/coffee1.jpg"
+                     data-tags="#вектор #иллюстратор #айдентика #логотип #паттерн">
                     <div class="card-img-wrapper">
                         <img src="img/coffee1.jpg" alt="Айдентика кофейни">
-                        <span class="card-badge">2D Vector</span>
+                        <span class="card-badge">2D Вектор</span>
                     </div>
                     <h3>Айдентика кофейни</h3>
                     <p>Логотип, набор паттернов и мерч. Векторная система...</p>
                     <span class="more-btn">Подробнее &rarr;</span>
                 </div>
 
-                <!-- Кейс 2 -->
-                <div class="portfolio-item" data-category="raster" 
-                     data-title="Ключевой арт кампании" 
-                     data-desc="Рисованный ключевой визуал для рекламной кампании: композиция, свет, финальная ретушь."
-                     data-images="img/art1.jpg" 
-                     data-tags="#digitalpainting #photoshop #sai2">
+                <!-- Кейс 2 (Растр) -->
+                <div class="portfolio-item" data-category="raster"
+                     data-title="Ключевой арт кампании"
+                     data-desc="Рисованный ключевой визуал для рекламной кампании: композиция, свет, финальная ретушь и подготовка к публикации."
+                     data-images="img/art1.jpg"
+                     data-tags="#цифроваяживопись #photoshop #sai2 #ключевойарт">
                     <div class="card-img-wrapper">
                         <img src="img/art1.jpg" alt="Ключевой арт">
                         <span class="card-badge">2D Digital Painting</span>
@@ -91,12 +95,12 @@
                     <span class="more-btn">Подробнее &rarr;</span>
                 </div>
 
-                <!-- Кейс 3 -->
-                <div class="portfolio-item" data-category="3d" 
-                     data-title="3D-сцена продукта" 
+                <!-- Кейс 3 (3D) -->
+                <div class="portfolio-item" data-category="3d"
+                     data-title="3D-сцена продукта"
                      data-desc="Продуктовая 3D-сцена в Blender: моделирование, материалы, свет и рендер под нужные форматы."
-                     data-images="img/blender1.jpg" 
-                     data-tags="#3dart #blender #modelling">
+                     data-images="img/blender1.jpg"
+                     data-tags="#3dart #blender #моделирование #рендер">
                     <div class="card-img-wrapper">
                         <img src="img/blender1.jpg" alt="3D-сцена продукта">
                         <span class="card-badge">3D Art</span>
@@ -106,12 +110,12 @@
                     <span class="more-btn">Подробнее &rarr;</span>
                 </div>
 
-                <!-- Кейс 4 -->
-                <div class="portfolio-item" data-category="gamedesign" 
-                     data-title="Интерфейс мобильной игры" 
+                <!-- Кейс 4 (Геймдизайн) -->
+                <div class="portfolio-item" data-category="gamedesign"
+                     data-title="Интерфейс мобильной игры"
                      data-desc="Разработка игрового UI/UX, игровых окон, кнопок и иконок ассетов для мобильного проекта."
-                     data-images="img/game1.jpg" 
-                     data-tags="#gamedesign #ui #ux #mobile">
+                     data-images="img/game1.jpg"
+                     data-tags="#геймдизайн #ui #ux #мобильныеигры #игроевойинтерфейс">
                     <div class="card-img-wrapper">
                         <img src="img/game1.jpg" alt="Геймдизайн">
                         <span class="card-badge">Геймдизайн</span>
@@ -130,7 +134,7 @@
                 <div class="timeline-item">
                     <span class="timeline-date">июнь 2026 — сейчас</span>
                     <div class="timeline-content">
-                        <h4>Графический дизайнер,专员 по препрессу и печати</h4>
+                        <h4>Графический дизайнер, специалист по препрессу и печати</h4>
                         <p>Занимаюсь разработкой полиграфического дизайна, технической ретушью, допечатной подготовкой многостраничной и сувенирной продукции.</p>
                     </div>
                 </div>
@@ -170,7 +174,6 @@
         </section>
     </main>
 
-    <!-- Подвал сайта -->
     <footer class="footer-bar container">
         <div class="footer-text">Марина Никитина · Открыта к новым проектам</div>
         <div class="footer-icons">
@@ -181,5 +184,21 @@
         </div>
     </footer>
 
-    <!-- Поп-ап окно ArtStation -->
+    <!-- Модальное окно -->
     <div id="artstation-modal" class="modal">
+        <button class="modal-close-btn">&times;</button>
+        <div class="modal-content">
+            <div class="modal-gallery" id="modal-gallery"></div>
+            <div class="modal-sidebar">
+                <div class="modal-sidebar-scroll">
+                    <h2 id="modal-title"></h2>
+                    <p id="modal-description"></p>
+                    <div class="modal-seo-tags" id="modal-tags"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
