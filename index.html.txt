@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Марина Никитина | Digital Artist & 3D Modeler</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Подключаем иконки для соцсетей -->
+    <link rel="stylesheet" href="https://cloudflare.com">
+</head>
+<body>
+
+    <!-- Переключатель языков -->
+    <div class="lang-switcher container">
+        <a href="index.html" class="lang-link active">RU</a>
+        <span class="lang-divider">|</span>
+        <a href="en.html" class="lang-link">EN</a>
+    </div>
+
+    <!-- БЛОК 1: Обо мне -->
+    <main class="container">
+        <section class="profile-card">
+            <div class="profile-left">
+                <span class="badge">DIGITAL ARTIST & 3D MODELER</span>
+                <h1>Марина<br>Никитина</h1>
+                <p class="summary">Создаю коммерческую графику в векторе, растре и 3D. Адаптирую проекты под любые форматы: от игровых ассетов до полиграфического дизайна и препресса. Работаю строго по ТЗ и всегда сдаю задачи в срок.</p>
+                <div class="social-icons">
+                    <a href="https://t.me" target="_blank" class="icon-btn"><i class="fab fa-telegram-plane"></i> Telegram</a>
+                    <a href="https://instagram.com" target="_blank" class="icon-btn"><i class="fab fa-instagram"></i> Instagram</a>
+                    <a href="https://vk.com" target="_blank" class="icon-btn"><i class="fab fa-vk"></i> VK</a>
+                    <a href="mailto:email@example.com" class="icon-btn"><i class="far fa-envelope"></i> Email</a>
+                </div>
+            </div>
+            <div class="profile-right">
+                <h3>СТЕК</h3>
+                <div class="tech-group">
+                    <h4>2D · Вектор</h4>
+                    <div class="tags"><span class="tag">Adobe Illustrator</span><span class="tag">Figma</span></div>
+                </div>
+                <div class="tech-group">
+                    <h4>2D · Растр</h4>
+                    <div class="tags"><span class="tag">Adobe Photoshop</span><span class="tag">SAI2</span></div>
+                </div>
+                <div class="tech-group">
+                    <h4>3D</h4>
+                    <div class="tags"><span class="tag">Blender</span></div>
+                </div>
+                <div class="tech-group">
+                    <h4>Полиграфия</h4>
+                    <div class="tags"><span class="tag">Препресс</span><span class="tag">Верстка</span><span class="tag">Полиграфический дизайн</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- БЛОК 2: Портфолио -->
+        <section class="portfolio-section">
+            <div class="portfolio-header">
+                <h2>Портфолио</h2>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">Все работы</button>
+                    <button class="filter-btn" data-filter="vector">2D Vector</button>
+                    <button class="filter-btn" data-filter="raster">2D Digital Painting</button>
+                    <button class="filter-btn" data-filter="3d">3D Art</button>
+                </div>
+            </div>
+
+            <div class="portfolio-grid">
+                <!-- Кейс 1 (Вектор) -->
+                
+                    <div class="card-img-wrapper">
+                        <img src="img/coffee1.jpg" alt="Айдентика кофейни">
+                        <span class="card-badge">2D Vector</span>
+                    </div>
+                    <h3>Айдентика кофейни</h3>
+                    <p>Логотип, набор паттернов и мерч. Векторная система...</p>
+                    <span class="more-btn">Подробнее <i class="fas fa-arrow-right"></i></span>
+                </div>
+
+                <!-- Кейс 2 (Растр) -->
+                <div class="portfolio-item" data-category="raster" 
+                     data-title="Ключевой арт кампании" 
+                     data-desc="Рисованный ключевой визуал для рекламной кампании: композиция, свет, финальная ретушь."
+                     data-images="img/art1.jpg" 
+                     data-tags="#digitalpainting #photoshop #sai2">
+                    <div class="card-img-wrapper">
+                        <img src="img/art1.jpg" alt="Ключевой арт">
+                        <span class="card-badge">2D Digital Painting</span>
+                    </div>
+                    <h3>Ключевой арт кампании</h3>
+                    <p>Рисованный ключевой визуал для рекламной кампании...</p>
+                    <span class="more-btn">Подробнее <i class="fas fa-arrow-right"></i></span>
+                </div>
+
+                <!-- Кейс 3 (3D) -->
+                <div class="portfolio-item" data-category="3d" 
+                     data-title="3D-сцена продукта" 
+                     data-desc="Продуктовая 3D-сцена в Blender: моделирование, материалы, свет и рендер под нужные форматы."
+                     data-images="img/blender1.jpg,img/blender2.jpg" 
+                     data-tags="#3dart #blender #modelling">
+                    <div class="card-img-wrapper">
+                        <img src="img/blender1.jpg" alt="3D-сцена продукта">
+                        <span class="card-badge">3D Art</span>
+                    </div>
+                    <h3>3D-сцена продукта</h3>
+                    <p>Продуктовая 3D-сцена в Blender: моделирование...</p>
+                    <span class="more-btn">Подробнее <i class="fas fa-arrow-right"></i></span>
+                </div>
+            </div>
+        </section>
+
+        <!-- БЛОК 3: Опыт и Скиллы -->
+        <section class="experience-skills-grid">
+            <div class="glass-block experience-block">
+                <h2>Опыт</h2>
+                <div class="timeline-item">
+                    <span class="timeline-date">июнь 2026 — сейчас</span>
+                    <div class="timeline-content">
+                        <h4>Графический дизайнер, специалист по препрессу и печати</h4>
+                        <p>Занимаюсь разработкой полиграфического дизайна, технической ретушью, допечатной подготовкой многостраничной и сувенирной продукции, а также управлением широкоформатной цифровой печатью.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-date">2022 — 2026</span>
+                    <div class="timeline-content">
+                        <h4>Учебные проекты в Arkin University of Creative Arts and Design</h4>
+                        <p>Академическая практика по реализации учебных проектов: создание цифровых иллюстраций, векторной графики и трехмерных моделей.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="glass-block skills-block">
+                <div class="skills-section-inner">
+                    <h3>HARD SKILLS</h3>
+                    <div class="tags">
+                        <span class="tag-alt">Adobe Illustrator</span><span class="tag-alt">Adobe Photoshop</span>
+                        <span class="tag-alt">SAI2</span><span class="tag-alt">Blender</span>
+                        <span class="tag-alt">Figma</span><span class="tag-alt">Препресс</span>
+                        <span class="tag-alt">Полиграфия</span><span class="tag-alt">Адаптация форматов</span>
+                    </div>
+                </div>
+                <div class="skills-section-inner" style="margin-top: 25px;">
+                    <h3>SOFT SKILLS</h3>
+                    <div class="tags">
+                        <span class="tag-alt">Работа строго по ТЗ</span><span class="tag-alt">Тайм-менеджмент</span>
+                        <span class="tag-alt">Коммуникация</span><span class="tag-alt">Внимание к деталям</span>
+                        <span class="tag-alt">Работа с клиентами</span><span class="tag-alt">Работа в команде</span>
+                        <span class="tag-alt">Адаптивность</span><span class="tag-alt">Работа с фидбеком</span>
+                    </div>
+                </div>
+                <div class="skills-section-inner" style="margin-top: 25px;">
+                    <h3>LANGUAGES</h3>
+                    <div class="tags">
+                        <span class="tag-alt">Русский (Родной)</span>
+                        <span class="tag-alt">Английский (B1-B2)</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Подвал сайта -->
+    <footer class="footer-bar container">
+        <div class="footer-text">Марина Никитина · Открыта к новым проектам</div>
+        <div class="footer-icons">
+            <a href="https://t.me" target="_blank"><i class="fab fa-telegram-plane"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://vk.com" target="_blank"><i class="fab fa-vk"></i></a>
+            <a href="mailto:email@example.com"><i class="far fa-envelope"></i></a>
+        </div>
+    </footer>
+
+    <!-- МОДАЛЬНОЕ ОКНО А-ЛЯ ARTSTATION (По умолчанию скрыто) -->
+    <div id="artstation-modal" class="modal">
+        <button class="modal-close-btn">&times;</button>
+        <div class="modal-content">
+            <!-- Лента картинок слева -->
+            <div class="modal-gallery" id="modal-gallery"></div>
+            <!-- Описание справа -->
+            <div class="modal-sidebar">

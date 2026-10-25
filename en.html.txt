@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marina Nikitina | Digital Artist & 3D Modeler</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cloudflare.com">
+</head>
+<body>
+
+    <!-- Language Switcher -->
+    <div class="lang-switcher container">
+        <a href="index.html" class="lang-link">RU</a>
+        <span class="lang-divider">|</span>
+        <a href="en.html" class="lang-link active">EN</a>
+    </div>
+
+    <!-- MAIN BLOCK -->
+    <main class="container">
+        <section class="profile-card">
+            <div class="profile-left">
+                <span class="badge">DIGITAL ARTIST & 3D MODELER</span>
+                <h1>Marina<br>Nikitina</h1>
+                <p class="summary">I create commercial graphics in vector, raster, and 3D formats. I adapt projects for any medium: from game assets to print design and pre-press. I strictly follow technical requirements and always meet deadlines.</p>
+                <div class="social-icons">
+                    <a href="https://t.me" target="_blank" class="icon-btn"><i class="fab fa-telegram-plane"></i> Telegram</a>
+                    <a href="https://instagram.com" target="_blank" class="icon-btn"><i class="fab fa-instagram"></i> Instagram</a>
+                    <a href="https://vk.com" target="_blank" class="icon-btn"><i class="fab fa-vk"></i> VK</a>
+                    <a href="mailto:email@example.com" class="icon-btn"><i class="far fa-envelope"></i> Email</a>
+                </div>
+            </div>
+            <div class="profile-right">
+                <h3>STACK</h3>
+                <div class="tech-group">
+                    <h4>2D · Vector</h4>
+                    <div class="tags"><span class="tag">Adobe Illustrator</span><span class="tag">Figma</span></div>
+                </div>
+                <div class="tech-group">
+                    <h4>2D · Raster</h4>
+                    <div class="tags"><span class="tag">Adobe Photoshop</span><span class="tag">SAI2</span></div>
+                </div>
+                <div class="tech-group">
+                    <h4>3D</h4>
+                    <div class="tags"><span class="tag">Blender</span></div>
+                </div>
+                <div class="tech-group">
+                    <h4>Printing</h4>
+                    <div class="tags"><span class="tag">Prepress</span><span class="tag">Typesetting</span><span class="tag">Print Design</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PORTFOLIO BLOCK -->
+        <section class="portfolio-section">
+            <div class="portfolio-header">
+                <h2>Portfolio</h2>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All Works</button>
+                    <button class="filter-btn" data-filter="vector">2D Vector</button>
+                    <button class="filter-btn" data-filter="raster">2D Digital Painting</button>
+                    <button class="filter-btn" data-filter="3d">3D Art</button>
+                </div>
+            </div>
+
+            <div class="portfolio-grid">
+                <!-- Case 1 (Vector) -->
+                
+                    <div class="card-img-wrapper">
+                        
+                        <span class="card-badge">2D Vector</span>
+                    </div>
+                    <h3>Coffee Shop Identity</h3>
+                    <p>Logo design, pattern set, and merchandise...</p>
+                    <span class="more-btn">Details <i class="fas fa-arrow-right"></i></span>
+                </div>
+
+                <!-- Case 2 (Raster) -->
+                <div class="portfolio-item" data-category="raster" 
+                     data-title="Key Campaign Art" 
+                     data-desc="Hand-drawn key visual for an advertising campaign: composition, lighting, and final retouching."
+                     data-images="img/art1.jpg" 
+                     data-tags="#digitalpainting #photoshop #sai2">
+                    <div class="card-img-wrapper">
+                        <img src="img/art1.jpg" alt="Key Art">
+                        <span class="card-badge">2D Digital Painting</span>
+                    </div>
+                    <h3>Key Campaign Art</h3>
+                    <p>Hand-drawn key visual for an advertising campaign...</p>
+                    <span class="more-btn">Details <i class="fas fa-arrow-right"></i></span>
+                </div>
+
+                <!-- Case 3 (3D) -->
+                <div class="portfolio-item" data-category="3d" 
+                     data-title="3D Product Scene" 
+                     data-desc="Product 3D scene created in Blender: modeling, materials, lighting, and rendering optimized for required formats."
+                     data-images="img/blender1.jpg,img/blender2.jpg" 
+                     data-tags="#3dart #blender #modelling">
+                    <div class="card-img-wrapper">
+                        <img src="img/blender1.jpg" alt="3D Product Scene">
+                        <span class="card-badge">3D Art</span>
+                    </div>
+                    <h3>3D Product Scene</h3>
+                    <p>Product 3D scene created in Blender...</p>
+                    <span class="more-btn">Details <i class="fas fa-arrow-right"></i></span>
+                </div>
+            </div>
+        </section>
+
+        <!-- EXPERIENCE AND SKILLS BLOCK -->
+        <section class="experience-skills-grid">
+            <div class="glass-block experience-block">
+                <h2>Experience</h2>
+                <div class="timeline-item">
+                    <span class="timeline-date">June 2026 — Present</span>
+                    <div class="timeline-content">
+                        <h4>Graphic Designer, Prepress & Print Specialist</h4>
+                        <p>Responsible for print design development, technical retouching, prepress of multi-page and souvenir materials, and managing wide-format digital printing equipment.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-date">2022 — 2026</span>
+                    <div class="timeline-content">
+                        <h4>Academic Projects at Arkin University of Creative Arts and Design</h4>
+                        <p>Hands-on academic practice focusing on digital illustrations, vector graphics, and 3D asset creation.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="glass-block skills-block">
+                <div class="skills-section-inner">
+                    <h3>HARD SKILLS</h3>
+                    <div class="tags">
+                        <span class="tag-alt">Adobe Illustrator</span><span class="tag-alt">Adobe Photoshop</span>
+                        <span class="tag-alt">SAI2</span><span class="tag-alt">Blender</span>
+                        <span class="tag-alt">Figma</span><span class="tag-alt">Prepress</span>
+                        <span class="tag-alt">Printing</span><span class="tag-alt">Format Adaptation</span>
+                    </div>
+                </div>
+                <div class="skills-section-inner" style="margin-top: 25px;">
+                    <h3>SOFT SKILLS</h3>
+                    <div class="tags">
+                        <span class="tag-alt">Strictly follow specs</span><span class="tag-alt">Time management</span>
+                        <span class="tag-alt">Communication</span><span class="tag-alt">Attention to detail</span>
+                        <span class="tag-alt">Client management</span><span class="tag-alt">Team player</span>
+                        <span class="tag-alt">Adaptability</span><span class="tag-alt">Feedback-driven</span>
+                    </div>
+                </div>
+                <div class="skills-section-inner" style="margin-top: 25px;">
+                    <h3>LANGUAGES</h3>
+                    <div class="tags">
+                        <span class="tag-alt">Russian (Native)</span>
+                        <span class="tag-alt">English (B1-B2)</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-bar container">
+        <div class="footer-text">Marina Nikitina · Open to new projects</div>
+        <div class="footer-icons">
+            <a href="https://t.me" target="_blank"><i class="fab fa-telegram-plane"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://vk.com" target="_blank"><i class="fab fa-vk"></i></a>
+            <a href="mailto:email@example.com"><i class="far fa-envelope"></i></a>
+        </div>
+    </footer>
+
+    <!-- ARTSTATION-STYLE MODAL -->
+    <div id="artstation-modal" class="modal">
+        <button class="modal-close-btn">&times;</button>
+        <div class="modal-content">
+            <div class="modal-gallery" id="modal-gallery"></div>
+            <div class="modal-sidebar">
+                <h2 id="modal-title">Project Title</h2>
+                <p id="modal-description">Project description...</p>
+                <div class="modal-seo-tags" id="modal-tags">#tags</div>
+            </div>
+        </div>
+    </div>
+
