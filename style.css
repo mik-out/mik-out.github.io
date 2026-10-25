@@ -17,6 +17,7 @@ body {
     padding: 20px;
 }
 
+/* Language switcher */
 .lang-switcher {
     text-align: right;
     padding-top: 20px;
@@ -35,6 +36,7 @@ body {
     margin: 0 5px;
 }
 
+/* Glass cards */
 .profile-card, .portfolio-item, .glass-block, .footer-bar {
     background: rgba(24, 24, 27, 0.6);
     backdrop-filter: blur(12px);
@@ -43,6 +45,7 @@ body {
     border-radius: 16px;
 }
 
+/* Profile card */
 .profile-card {
     display: grid;
     grid-template-columns: 1.2fr 0.8fr;
@@ -109,6 +112,7 @@ body {
     color: #a1a1aa;
 }
 
+/* Portfolio */
 .portfolio-section { margin-top: 40px; }
 .portfolio-header {
     display: flex;
@@ -137,11 +141,13 @@ body {
     color: #0b0b0c;
 }
 
+/* 3 карточки в ряд */
 .portfolio-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
+
 .portfolio-item {
     padding: 12px;
     cursor: pointer;
@@ -194,6 +200,7 @@ body {
     font-weight: 500;
 }
 
+/* Experience & Skills */
 .experience-skills-grid {
     display: grid;
     grid-template-columns: 1.2fr 0.8fr;
@@ -226,6 +233,7 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.06);
 }
 
+/* Footer */
 .footer-bar {
     display: flex;
     justify-content: space-between;
@@ -238,6 +246,7 @@ body {
 .footer-icons a { color: #71717a; margin-left: 15px; font-size: 1.1rem; }
 .footer-icons a:hover { color: #ffffff; }
 
+/* Modal */
 .modal {
     display: none;
     position: fixed;
@@ -288,9 +297,21 @@ body {
 #modal-description { font-size: 0.95rem; color: #a1a1aa; line-height: 1.6; }
 .modal-seo-tags { font-size: 0.85rem; color: #71717a; margin-top: 30px; font-weight: 500; }
 
+/* Responsive */
 @media (max-width: 850px) {
-    .profile-card, .experience-skills-grid, .modal-content { grid-template-columns: 1fr; }
-    .profile-right { border-left: none; padding-left: 0; border-top: 1px solid rgba(255, 255, 255, 0.05); padding-top: 30px; }
+    .profile-card, .experience-skills-grid, .modal-content {
+        grid-template-columns: 1fr;
+    }
+    .profile-right {
+        border-left: none; padding-left: 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.05);
+        padding-top: 30px;
+    }
+    .portfolio-grid { grid-template-columns: 1fr 1fr; }
     .modal-sidebar { height: auto; }
     .modal-gallery { height: auto; overflow-y: visible; }
+}
+
+@media (max-width: 500px) {
+    .portfolio-grid { grid-template-columns: 1fr; }
 }
