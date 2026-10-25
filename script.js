@@ -1,12 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
-    
-    // ЛОГИКА ФИЛЬТРАЦИИ ПОРТФОЛИО
+
     const filterButtons = document.querySelectorAll('.filter-btn');
     const portfolioItems = document.querySelectorAll('.portfolio-item');
 
+    // ========== ФИЛЬТРАЦИЯ ==========
     filterButtons.forEach(button => {
         button.addEventListener('click', () => {
-            // Переключаем активный класс у кнопок
             filterButtons.forEach(btn => btn.classList.remove('active'));
             button.classList.add('active');
 
@@ -22,53 +21,53 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // ЛОГИКА МОДАЛЬНОГО ОКНА (ARTSTATION)
-    const modal = document.getElementById('artstation-modal');
-    const closeBtn = document.querySelector('.modal-close-btn');
-    const modalGallery = document.getElementById('modal-gallery');
-    const modalTitle = document.getElementById('modal-title');
+    // ========== МОДАЛЬНОЕ ОКНО ==========
+    const modal            = document.getElementById('artstation-modal');
+    const closeBtn         = document.querySelector('.modal-close-btn');
+    const modalGallery     = document.getElementById('modal-gallery');
+    const modalTitle       = document.getElementById('modal-title');
     const modalDescription = document.getElementById('modal-description');
-    const modalTags = document.getElementById('modal-tags');
+    const modalTags        = document.getElementById('modal-tags');
+
+    if (!modal || !closeBtn) return;
 
     portfolioItems.forEach(item => {
         item.addEventListener('click', () => {
-            // Собираем данные из дата-атрибутов кликнутой карточки
-            const title = item.getAttribute('data-title');
-            const desc = item.getAttribute('data-desc');
-            const tags = item.getAttribute('data-tags');
+            const title       = item.getAttribute('data-title');
+            const desc        = item.getAttribute('data-desc');
+            const tags        = item.getAttribute('data-tags');
             const imagesArray = item.getAttribute('data-images').split(',');
 
-            // Заполняем текстовые поля в модалке
-            modalTitle.textContent = title;
+            modalTitle.textContent       = title;
             modalDescription.textContent = desc;
-            modalTags.textContent = tags;
+            modalTags.textContent        = tags;
 
-            // Очищаем галерею от прошлых просмотров и рендерим новые картинки одна за одной
             modalGallery.innerHTML = '';
-            imagesArray.forEach(imgSrc => {
-                const imgElement = document.createElement('img');
-                imgElement.src = imgSrc.trim();
-                imgElement.alt = title;
-                modalGallery.appendChild(imgElement);
+            imagesArray.forEach(src => {
+                const img = document.createElement('img');
+                img.src = src.trim();
+                img.alt = title;
+                modalGallery.appendChild(img);
             });
 
-            // Показываем окно и блокируем прокрутку основного сайта
             modal.style.display = 'block';
+            modalGallery.scrollTop = 0;
             document.body.style.overflow = 'hidden';
         });
     });
 
-    // Закрытие модального окна
-    closeBtn.addEventListener('click', () => {
+    function closeModal() {
         modal.style.display = 'none';
         document.body.style.overflow = 'auto';
+    }
+
+    closeBtn.addEventListener('click', closeModal);
+
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) closeModal();
     });
 
-    // Закрытие по клику на пустое пространство вокруг контента
-    modal.addEventListener('click', (e) => {
-        if (e.target === modal) {
-            modal.style.display = 'none';
-            document.body.style.overflow = 'auto';
-        }
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && modal.style.display === 'block') closeModal();
     });
 });
