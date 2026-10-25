@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marina Nikitina | Digital Artist & 3D Modeler</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cloudflare.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
@@ -67,9 +67,13 @@
 
             <div class="portfolio-grid">
                 <!-- Case 1 (Vector) -->
-                
+                <div class="portfolio-item" data-category="vector"
+                     data-title="Coffee Shop Identity"
+                     data-desc="Logo design, pattern set, and merchandise for a specialty coffee brand. Full visual identity system."
+                     data-images="img/coffee1.jpg"
+                     data-tags="#vector #illustrator #branding #logo #pattern">
                     <div class="card-img-wrapper">
-                        
+                        <img src="img/coffee1.jpg" alt="Coffee Shop Identity">
                         <span class="card-badge">2D Vector</span>
                     </div>
                     <h3>Coffee Shop Identity</h3>
@@ -78,11 +82,11 @@
                 </div>
 
                 <!-- Case 2 (Raster) -->
-                <div class="portfolio-item" data-category="raster" 
-                     data-title="Key Campaign Art" 
+                <div class="portfolio-item" data-category="raster"
+                     data-title="Key Campaign Art"
                      data-desc="Hand-drawn key visual for an advertising campaign: composition, lighting, and final retouching."
-                     data-images="img/art1.jpg" 
-                     data-tags="#digitalpainting #photoshop #sai2">
+                     data-images="img/art1.jpg"
+                     data-tags="#digitalpainting #photoshop #sai2 #keyart">
                     <div class="card-img-wrapper">
                         <img src="img/art1.jpg" alt="Key Art">
                         <span class="card-badge">2D Digital Painting</span>
@@ -93,11 +97,11 @@
                 </div>
 
                 <!-- Case 3 (3D) -->
-                <div class="portfolio-item" data-category="3d" 
-                     data-title="3D Product Scene" 
+                <div class="portfolio-item" data-category="3d"
+                     data-title="3D Product Scene"
                      data-desc="Product 3D scene created in Blender: modeling, materials, lighting, and rendering optimized for required formats."
-                     data-images="img/blender1.jpg" 
-                     data-tags="#3dart #blender #modelling">
+                     data-images="img/blender1.jpg"
+                     data-tags="#3dart #blender #modelling #rendering">
                     <div class="card-img-wrapper">
                         <img src="img/blender1.jpg" alt="3D Product Scene">
                         <span class="card-badge">3D Art</span>
@@ -108,11 +112,11 @@
                 </div>
 
                 <!-- Case 4 (Game Design) -->
-                <div class="portfolio-item" data-category="gamedesign" 
-                     data-title="Mobile Game UI" 
+                <div class="portfolio-item" data-category="gamedesign"
+                     data-title="Mobile Game UI"
                      data-desc="Development of game UI/UX, layouts, windows, buttons, and asset icons for a mobile project."
-                     data-images="img/game1.jpg" 
-                     data-tags="#gamedesign #ui #ux #mobile">
+                     data-images="img/game1.jpg"
+                     data-tags="#gamedesign #ui #ux #mobile #gameui">
                     <div class="card-img-wrapper">
                         <img src="img/game1.jpg" alt="Game Design">
                         <span class="card-badge">Game Design</span>
@@ -181,4 +185,21 @@
         </div>
     </footer>
 
-    <!-- ARTSTATION-STYLE MODAL -->
+    <!-- Modal -->
+    <div id="artstation-modal" class="modal">
+        <button class="modal-close-btn">&times;</button>
+        <div class="modal-content">
+            <div class="modal-gallery" id="modal-gallery"></div>
+            <div class="modal-sidebar">
+                <div class="modal-sidebar-scroll">
+                    <h2 id="modal-title"></h2>
+                    <p id="modal-description"></p>
+                    <div class="modal-seo-tags" id="modal-tags"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
