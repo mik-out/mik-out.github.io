@@ -18,6 +18,7 @@
 
     <!-- MAIN BLOCK -->
     <main class="container">
+        <!-- BLOCK 1: About Me -->
         <section class="profile-card">
             <div class="profile-left">
                 <span class="badge">DIGITAL ARTIST & 3D MODELER</span>
@@ -51,7 +52,7 @@
             </div>
         </section>
 
-        <!-- PORTFOLIO BLOCK -->
+        <!-- BLOCK 2: Portfolio -->
         <section class="portfolio-section">
             <div class="portfolio-header">
                 <h2>Portfolio</h2>
@@ -60,6 +61,7 @@
                     <button class="filter-btn" data-filter="vector">2D Vector</button>
                     <button class="filter-btn" data-filter="raster">2D Digital Painting</button>
                     <button class="filter-btn" data-filter="3d">3D Art</button>
+                    <button class="filter-btn" data-filter="gamedesign">Game Design</button>
                 </div>
             </div>
 
@@ -72,7 +74,7 @@
                     </div>
                     <h3>Coffee Shop Identity</h3>
                     <p>Logo design, pattern set, and merchandise...</p>
-                    <span class="more-btn">Details <i class="fas fa-arrow-right"></i></span>
+                    <span class="more-btn">Details &rarr;</span>
                 </div>
 
                 <!-- Case 2 (Raster) -->
@@ -87,14 +89,14 @@
                     </div>
                     <h3>Key Campaign Art</h3>
                     <p>Hand-drawn key visual for an advertising campaign...</p>
-                    <span class="more-btn">Details <i class="fas fa-arrow-right"></i></span>
+                    <span class="more-btn">Details &rarr;</span>
                 </div>
 
                 <!-- Case 3 (3D) -->
                 <div class="portfolio-item" data-category="3d" 
                      data-title="3D Product Scene" 
                      data-desc="Product 3D scene created in Blender: modeling, materials, lighting, and rendering optimized for required formats."
-                     data-images="img/blender1.jpg,img/blender2.jpg" 
+                     data-images="img/blender1.jpg" 
                      data-tags="#3dart #blender #modelling">
                     <div class="card-img-wrapper">
                         <img src="img/blender1.jpg" alt="3D Product Scene">
@@ -102,12 +104,27 @@
                     </div>
                     <h3>3D Product Scene</h3>
                     <p>Product 3D scene created in Blender...</p>
-                    <span class="more-btn">Details <i class="fas fa-arrow-right"></i></span>
+                    <span class="more-btn">Details &rarr;</span>
+                </div>
+
+                <!-- Case 4 (Game Design) -->
+                <div class="portfolio-item" data-category="gamedesign" 
+                     data-title="Mobile Game UI" 
+                     data-desc="Development of game UI/UX, layouts, windows, buttons, and asset icons for a mobile project."
+                     data-images="img/game1.jpg" 
+                     data-tags="#gamedesign #ui #ux #mobile">
+                    <div class="card-img-wrapper">
+                        <img src="img/game1.jpg" alt="Game Design">
+                        <span class="card-badge">Game Design</span>
+                    </div>
+                    <h3>Mobile Game UI</h3>
+                    <p>Development of game UI/UX, layouts, windows...</p>
+                    <span class="more-btn">Details &rarr;</span>
                 </div>
             </div>
         </section>
 
-        <!-- EXPERIENCE AND SKILLS BLOCK -->
+        <!-- BLOCK 3: Experience and Skills -->
         <section class="experience-skills-grid">
             <div class="glass-block experience-block">
                 <h2>Experience</h2>
@@ -115,7 +132,7 @@
                     <span class="timeline-date">June 2026 — Present</span>
                     <div class="timeline-content">
                         <h4>Graphic Designer, Prepress & Print Specialist</h4>
-                        <p>Responsible for print design development, technical retouching, prepress of multi-page and souvenir materials, and managing wide-format digital printing equipment.</p>
+                        <p>Responsible for print design development, technical retouching, prepress of multi-page and souvenir materials.</p>
                     </div>
                 </div>
                 <div class="timeline-item">
@@ -134,19 +151,16 @@
                         <span class="tag-alt">Adobe Illustrator</span><span class="tag-alt">Adobe Photoshop</span>
                         <span class="tag-alt">SAI2</span><span class="tag-alt">Blender</span>
                         <span class="tag-alt">Figma</span><span class="tag-alt">Prepress</span>
-                        <span class="tag-alt">Printing</span><span class="tag-alt">Format Adaptation</span>
                     </div>
                 </div>
-                <div class="skills-section-inner" style="margin-top: 25px;">
+                <div class="skills-section-inner" style="margin-top: 20px;">
                     <h3>SOFT SKILLS</h3>
                     <div class="tags">
                         <span class="tag-alt">Strictly follow specs</span><span class="tag-alt">Time management</span>
-                        <span class="tag-alt">Communication</span><span class="tag-alt">Attention to detail</span>
-                        <span class="tag-alt">Client management</span><span class="tag-alt">Team player</span>
-                        <span class="tag-alt">Adaptability</span><span class="tag-alt">Feedback-driven</span>
+                        <span class="tag-alt">Attention to detail</span><span class="tag-alt">Communication</span>
                     </div>
                 </div>
-                <div class="skills-section-inner" style="margin-top: 25px;">
+                <div class="skills-section-inner" style="margin-top: 20px;">
                     <h3>LANGUAGES</h3>
                     <div class="tags">
                         <span class="tag-alt">Russian (Native)</span>
@@ -157,7 +171,6 @@
         </section>
     </main>
 
-    <!-- Footer -->
     <footer class="footer-bar container">
         <div class="footer-text">Marina Nikitina · Open to new projects</div>
         <div class="footer-icons">
@@ -169,15 +182,3 @@
     </footer>
 
     <!-- ARTSTATION-STYLE MODAL -->
-    <div id="artstation-modal" class="modal">
-        <button class="modal-close-btn">&times;</button>
-        <div class="modal-content">
-            <div class="modal-gallery" id="modal-gallery"></div>
-            <div class="modal-sidebar">
-                <h2 id="modal-title">Project Title</h2>
-                <p id="modal-description">Project description...</p>
-                <div class="modal-seo-tags" id="modal-tags">#tags</div>
-            </div>
-        </div>
-    </div>
-
