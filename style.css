@@ -315,3 +315,69 @@ body {
 @media (max-width: 500px) {
     .portfolio-grid { grid-template-columns: 1fr; }
 }
+
+/* ========== ИСПРАВЛЕНИЯ ДЛЯ МОДАЛЬНОГО ОКНА ========== */
+
+/* Запрещаем прокрутку всего экрана позади модалки */
+.modal {
+    overflow: hidden; 
+}
+
+/* Ограничиваем галерею, чтобы скроллились только картинки внутри */
+.modal-gallery {
+    height: 100vh;
+    overflow-y: auto;
+    padding: 60px 40px; /* Увеличили отступы для красоты */
+}
+
+/* Защита картинок от искажений */
+.modal-gallery img {
+    width: 100%;
+    height: auto;
+    object-fit: contain; /* Картинка сохраняет пропорции и не сжимается */
+    display: block;
+}
+
+/* Фиксируем сайдбар, чтобы он стоял на месте, пока картинки скроллятся */
+.modal-sidebar {
+    height: 100vh;
+    overflow: hidden; /* Сам сайдбар не скроллится */
+}
+
+/* Скролл только для текста внутри сайдбара, если он очень длинный */
+.modal-sidebar-scroll {
+    height: 100%;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+/* Стильный кастомный скроллбар для галереи и сайдбара (опционально) */
+.modal-gallery::-webkit-scrollbar,
+.modal-sidebar-scroll::-webkit-scrollbar {
+    width: 6px;
+}
+.modal-gallery::-webkit-scrollbar-thumb,
+.modal-sidebar-scroll::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 3px;
+}
+.modal-gallery::-webkit-scrollbar-thumb:hover,
+.modal-sidebar-scroll::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Адаптивность для мобильных устройств (переопределение нижнего скролла) */
+@media (max-width: 850px) {
+    .modal-content {
+        height: 100vh;
+        overflow-y: auto; /* На смартфонах скроллится всё окно целиком вниз */
+        grid-template-columns: 1fr;
+    }
+    .modal-gallery, .modal-sidebar {
+        height: auto;
+        overflow-y: visible;
+    }
+    .modal-gallery {
+        padding: 8px 20px;
+    }
+}
